@@ -1,0 +1,13 @@
+python inference.py --model model/horse2zebra.pb --input horse1.jpg --output fakezebra1.jpg
+
+python inference.py --model model/zebra2horse.pb --input fakezebra1.jpg --output fakehorse1.jpg
+
+python inference.py --model model/vangogh2photo.pb --input v1.jpg --output fakephoto1.jpg
+
+python inference.py --model model/photo2vangogh.pb --input fakephoto1.jpg --output fakevangogh1.jpg
+
+
+
+
+python inference.py --model pretrained/apple2orange.pb --input apple1.jpg --output orange1.jpg
+scp qiangzhiwen@202.121.182.217:/home/qiangzhiwen/cyclegan/Group31-code/orange1.jpg /home/lightman/文档/ARVR/Group31-code
